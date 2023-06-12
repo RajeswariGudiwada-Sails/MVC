@@ -1,0 +1,23 @@
+﻿@model List<FirstMVCApp.Models.Studentmodel>
+ 
+
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h4>
+    Hello!
+</h4>
+
+<ul>
+    @foreach (var sdtVM in Model)
+    {
+        <li>@sdtVM.Name (@sdtVM.Age)
+        </li>
+    }
+</ul>
+
+
+

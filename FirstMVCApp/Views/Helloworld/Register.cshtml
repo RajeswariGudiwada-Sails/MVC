@@ -1,0 +1,46 @@
+﻿@model Studentmodel
+
+
+
+<H4>
+    Registration form
+</H4>
+<hr />
+<div class="row">
+    <div class="col-6">
+
+        <div calss="card">
+
+            <div class="card-header">
+                <h5>You can register here!</h5>
+            </div>
+
+            <div class="card-body">
+                <form asp-controller="HelloWorld" asp-action="registation" method="post">
+
+
+                    <div class=" mb-3">
+                        <label class="form-label">Student name</label>
+                        <input asp-for=Name type="text" class="form-control" />
+                    </div>
+
+                    <div class=" mb-3">
+                        <label class="form-label">Student age</label>
+                        <input asp-for =Age type="number" class="form-control" />
+                    </div>
+
+                    <div class=" mb-3">
+                        <button class="btn btn-primary">save</button>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="card-footer">
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
